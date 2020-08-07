@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+.NavText {
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Open Sans"; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 75%;
+}
+
+.Number {
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Open Sans"; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 400%;
+}
+
+.titlediv{
+  text-align: left;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1000;
+  font-size: 320%;
+  color: #c6c6c6;
+}
+
+.titledescription {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #909091;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +70,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.HomeBackground {
+  background-image: url("./assets/top\ half\ background.png");
+
+}
+
+
+
+.topBackgroundImage {
+  position: absolute;
 }
