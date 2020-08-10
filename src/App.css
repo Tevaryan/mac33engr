@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap');
 
 .NavText {
   /* font-family: "Montserrat", sans-serif; */
@@ -20,15 +21,36 @@
   text-align: left;
 }
 
+.description {
+  font-family: 'Gentium Book Basic';
+}
+
+.buttonText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  font-size: 70%;
+}
+
+.whatwedo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 450%;
+  letter-spacing: 1px;
+  color: #050340;
+  /* color:#090859; */
+}
+
+
 .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 1000;
-  font-size: 320%;
+  font-size: 290%;
   color: #c6c6c6;
 }
 
 .titledescription {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gentium Book Basic';
   font-weight: 700;
   color: #909091;
 }
@@ -79,6 +101,3 @@
 
 
 
-.topBackgroundImage {
-  position: absolute;
-}
