@@ -23,12 +23,13 @@ class Servicespage extends Component {
       <div style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}}>
         <div style={{width:'100vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
           <div  style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', backgroundImage: `url("${twoD1}")`, position:'absolute',zIndex:'-2'}}></div>
-        {/* <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/> */}
+        <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
         </div>
 
-        <div style={{width:'100vw', height:'45vh', backgroundImage: `url("${background}")`}} className="d-flex justify-content-center flex-column">
+
         <Navbar/>
-          <div style={{width:'100%', height:'100%'}} className="d-flex justify-content-center">
+        <div style={{width:'100vw', height:'45vh', backgroundImage: `url("${background}")`}} className="d-flex justify-content-center flex-column">
+          <div style={{width:'100vw', height:'40vh'}} className="d-flex justify-content-center">
           <div style={{width:'60%', height:'100%'}} className="d-flex justify-content-center align-items-center">
           <img src={text} alt="" style={{width:'100%'}}/>
           </div>
@@ -63,10 +64,6 @@ class Servicespage extends Component {
             </div>
           </div>
         </div>
-
-
-
-
 
       </div>
     );

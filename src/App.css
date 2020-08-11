@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap");
 
 .NavText {
   /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Open Sans"; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 75%;
 }
@@ -12,28 +12,28 @@
 .Number {
   /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Open Sans"; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 400%;
 }
 
-.titlediv{
+.titlediv {
   text-align: left;
 }
 
 .description {
-  font-family: 'Gentium Book Basic';
+  font-family: "Gentium Book Basic";
 }
 
 .buttonText {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 1000;
   letter-spacing: 1px;
   font-size: 70%;
 }
 
 .whatwedo {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 450%;
   letter-spacing: 1px;
@@ -41,16 +41,15 @@
   /* color:#090859; */
 }
 
-
 .title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 1000;
   font-size: 290%;
   color: #c6c6c6;
 }
 
 .titledescription {
-  font-family: 'Gentium Book Basic';
+  font-family: "Gentium Book Basic";
   font-weight: 700;
   color: #909091;
 }
@@ -96,31 +95,29 @@
 
 .HomeBackground {
   background-image: url("./assets/top\ half\ background.png");
-
 }
 
 .fullnavbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 65px;
   transition: 0.1s;
 }
 
 .logo {
   position: absolute;
-  margin: 0% 3%;
-  height: 0%;
-  width:0%;
+  height: 50%;
+  width: 10vw;
   transition: 0.5s;
-  transform: scale(0.2);
+  transform: scale(0.07);
 }
 
-.logo.scrolled{
-  margin: 0.05% 3%;
-  transform: scale(0.1);
+.logo.scrolled {
+  height: 50%;
+  width: 10vw;
+  transform: scale(0.05);
 }
 
-.fullnavbar.scrolled{
+.fullnavbar.scrolled {
   background-color: rgb(2, 0, 63);
 }

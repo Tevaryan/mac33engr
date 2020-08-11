@@ -34,10 +34,13 @@ class Navbar extends Component {
     return (
       <div id='fullnavbar' className = "fullnavbar">
 
-          <div id='logo' className = 'logo'>
+          <div id='logo' className = 'logo' >
+            {/* <div className="d-flex justify-content-center align-items-center" style={{width:'10vw'}} >
+
+            </div> */}
             <img src={mach33logo} alt="mach33logo"/>
-          </div> 
-            
+          </div>
+
           <div className="d-flex justify-content-center" style={{padding:'1%'}} >
           <Nav className="NavBarLarge" >
             <NavLink tag={Link} to={'/'} className="d-flex Nav-text NavText" style={{color:'white'}}>HOME</NavLink>
