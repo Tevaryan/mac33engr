@@ -99,5 +99,28 @@
 
 }
 
+.fullnavbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 65px;
+  transition: 0.1s;
+}
 
+.logo {
+  position: absolute;
+  margin: 0% 3%;
+  height: 0%;
+  width:0%;
+  transition: 0.5s;
+  transform: scale(0.2);
+}
 
+.logo.scrolled{
+  margin: 0.05% 3%;
+  transform: scale(0.1);
+}
+
+.fullnavbar.scrolled{
+  background-color: rgb(2, 0, 63);
+}
