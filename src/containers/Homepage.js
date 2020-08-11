@@ -36,7 +36,7 @@ class Homepage extends Component {
           </div>
         </div>
 
-        <div style={{width:'100vw', marginTop:'2%'}} className="d-flex justify-content-center">
+        <div style={{width:'100vw', marginTop:'6%'}} className="d-flex justify-content-center">
           <div style={{width:'50%'}} className="d-flex justify-content-center">
             <h1 className="whatwedo">WHAT WE DO</h1>
           </div>
