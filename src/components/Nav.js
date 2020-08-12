@@ -3,8 +3,7 @@ import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reac
 import {Link} from "react-router-dom";
 import { Nav, NavLink } from 'reactstrap';
 import mach33logo from '../assets/mach33logo.png';
-
-import "../App.css";
+import '../assets/styles/nav.css'
 
 class Navbar extends Component {
   constructor(props) {
@@ -34,12 +33,12 @@ class Navbar extends Component {
     return (
       <div id='fullnavbar' className = "fullnavbar">
 
-          <div id='logo' className = 'logo' >
+          <NavLink tag={Link} to={'/'} id='logo' className = 'logo' >
             {/* <div className="d-flex justify-content-center align-items-center" style={{width:'10vw'}} >
 
             </div> */}
             <img src={mach33logo} alt="mach33logo"/>
-          </div>
+          </NavLink>
 
           <div className="d-flex justify-content-center" style={{padding:'1%'}} >
           <Nav className="NavBarLarge" >

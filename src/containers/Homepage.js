@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Nav';
+import Footer from '../components/Footer';
 import background from "../assets/top half background.png";
 import ideation from "../assets/ideation.png";
 import graphics from "../assets/graphics1.png";
@@ -152,8 +153,8 @@ class Homepage extends Component {
 
         </div>
 
-
-
+        <Footer/>
+        
       </div>
     );
   }
