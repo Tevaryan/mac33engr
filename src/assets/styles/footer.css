@@ -1,7 +1,7 @@
 .footerbar {
     display: flex;
-    background-color:rgb(2, 0, 63);
-    width:100%;
+    background-image: url('../graphics1.png');
+    background-size: 100% 100%;
     align-items: center;
     justify-content: center;
 }
