@@ -13,8 +13,7 @@ class Footer extends Component{
 
             {/* Column1 */}
             <div className = 'columns'>
-                <div className = 'columns-header'> What We Do</div>
-                <hr className = 'column-line'/>
+                <NavLink className="d-flex Nav-text NavText" style={{color:'#c6c6c6', fontWeight:'bolder'}}> WHAT WE DO</NavLink>
                 <ul className = 'list-unstyled'>
                     <NavLink>CAD</NavLink>
                     <NavLink>Protyping</NavLink>
@@ -26,8 +25,7 @@ class Footer extends Component{
 
             {/* Column2 */}
             <div className = 'columns'>
-                <div className = 'columns-header'> Column 2</div>
-                <hr className = 'column-line'/>
+                <NavLink className="d-flex Nav-text NavText" style={{color:'#c6c6c6', fontWeight:'bolder'}}> COLUMN 2</NavLink>
                 <ul className = 'list-unstyled'>
                     <NavLink>Link 1</NavLink>
                     <NavLink>Link 2</NavLink>
@@ -39,8 +37,7 @@ class Footer extends Component{
 
             {/* Column3 */}
             <div className = 'columns'>
-                <div className = 'columns-header'> Contact Us</div>
-                <hr className = 'column-line'/>
+                <NavLink className="d-flex Nav-text NavText" style={{color:'#c6c6c6', fontWeight:'bolder'}}> CONTACT US</NavLink>
                 <ul className = 'list-unstyled'>
                
                     <NavItem>
@@ -63,8 +60,7 @@ class Footer extends Component{
                     </NavItem>
                   
                 
-                  
-                  
+              
                 </ul>
               </div>
 
