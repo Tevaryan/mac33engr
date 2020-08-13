@@ -27,7 +27,11 @@ class Navbar extends Component {
         fullnavbar.classList.remove('scrolled');
       }
     })
+
+    window.scrollTo(0, 0);
   }
+
+
 
   render() {
     return (

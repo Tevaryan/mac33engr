@@ -29,7 +29,7 @@ class Servicespage extends Component {
 
 
         <Navbar/>
-        
+
         <div style={{width:'100vw', height:'45vh', backgroundImage: `url("${background}")`}} className="d-flex justify-content-center flex-column">
           <div style={{width:'100vw', height:'40vh'}} className="d-flex justify-content-center">
           <div style={{width:'60%', height:'100%'}} className="d-flex justify-content-center align-items-center">

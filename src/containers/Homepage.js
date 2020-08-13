@@ -31,7 +31,7 @@ class Homepage extends Component {
         <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
         </div>
         <Navbar/>
-        
+
         <div style={{width:'100vw', marginTop:'1%'}} className="d-flex justify-content-center">
           <div style={{width:'70%', height:'60vh'}}>
           <img src={titletext} alt="" style={{width:'100%'}}/>
@@ -154,7 +154,7 @@ class Homepage extends Component {
 
         </div>
 
-        
+
         <Footer/>
       </div>
     );

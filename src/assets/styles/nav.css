@@ -4,8 +4,9 @@
     position: sticky;
     top: 0;
     transition: 0.1s;
+    z-index: 999;
   }
-  
+
   .logo {
     position: absolute;
     height: 50%;
@@ -13,14 +14,13 @@
     transition: 0.5s;
     transform: scale(0.07);
   }
-  
+
   .logo.scrolled {
     height: 50%;
     width: 10vw;
     transform: scale(0.05);
   }
-  
+
   .fullnavbar.scrolled {
     background-color: rgb(2, 0, 63);
   }
-  

@@ -29,6 +29,10 @@ class Servicespage extends Component {
     };
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}}>
@@ -63,41 +67,39 @@ class Servicespage extends Component {
             </div>
             </div>
             <div style={{paddingLeft:'2%'}}>
-              <div>
               <StackGrid
               columnWidth={200}
               gutterWidth={10}
-              gutterHeight={10}>
-                  <div key="key1" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}} className="p-1">
-                  <img src={one} alt="" style={{width:'100%'}}/>
+              gutterHeight={10}
+              monitorImagesLoaded="true">
+                  <div key="key1" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}} className="p-3">
+                    <img src={one} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key2" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={two} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={two} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key3" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={three} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={three} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key4" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={four} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={four} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key5" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={five} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={five} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key6" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={six} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={six} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key7" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={seven} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={seven} alt="" style={{width:'100%'}}/>
                   </div>
                 </StackGrid>
-              </div>
-
             </div>
 
           </div>
@@ -123,33 +125,34 @@ class Servicespage extends Component {
               <StackGrid
               columnWidth={200}
               gutterWidth={10}
-              gutterHeight={10}>
-                  <div key="key1" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}} className="p-1">
-                  <img src={one} alt="" style={{width:'100%'}}/>
+              gutterHeight={10}
+              monitorImagesLoaded="true">
+                  <div key="key1" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}} className="p-3">
+                    <img src={one} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key2" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={two} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={two} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key3" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={three} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={three} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key4" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={four} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={four} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key5" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={five} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={five} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key6" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={six} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={six} alt="" style={{width:'100%'}}/>
                   </div>
                   <div key="key7" style={{width:'100%', height:'100%', boxShadow: '5px 5px 5px grey'}}
-                  className="p-1">
-                  <img src={seven} alt="" style={{width:'100%'}}/>
+                  className="p-3">
+                    <img src={seven} alt="" style={{width:'100%'}}/>
                   </div>
                 </StackGrid>
               </div>
@@ -171,7 +174,7 @@ class Servicespage extends Component {
             </div>
           </div>
         </div> */}
-        
+
         <Footer/>
       </div>
     );
