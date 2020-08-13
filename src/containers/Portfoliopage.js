@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Nav';
+import Footer from '../components/Footer';
 import background from "../assets/top half background.png";
 import "../App.css"
 
@@ -19,6 +20,8 @@ class Portfoliopage extends Component {
         </div>
         <Navbar/>
         <h1>Portfolio page</h1>
+        
+        <Footer/>
       </div>
     );
   }

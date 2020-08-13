@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Nav';
+import Footer from '../components/Footer';
 import background from "../assets/otherpages.png";
 import text from "../assets/our3Dprinters.png"
 import twoD1 from "../assets/2D1 copy.jpg"
@@ -170,6 +171,8 @@ class Servicespage extends Component {
             </div>
           </div>
         </div> */}
+        
+        <Footer/>
       </div>
     );
   }

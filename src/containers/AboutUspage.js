@@ -15,18 +15,14 @@ class AboutUspage extends Component {
   render() {
     return (
       <div>
-        <div>
         <div style={{width:'100vw'}}>
         <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
         </div>
         <Navbar/>
         <h1>About Us</h1>
         
-        
-
-        </div>
+        <Footer/>
       </div>
-
     );
   }
 }

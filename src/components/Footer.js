@@ -7,7 +7,7 @@ class Footer extends Component{
    
   render(){
     return (
-      <div className = 'footerbar'>
+      <div className = 'footerbar' style={{marginTop:'10%'}}>
         <div className = 'row'>
 
 
@@ -19,6 +19,7 @@ class Footer extends Component{
                     <NavLink>CAD</NavLink>
                     <NavLink>Protyping</NavLink>
                     <NavLink>Manufacturing</NavLink>
+                    <NavLink tag={Link} to={'/3Dprinting'}>3D Printing</NavLink>
                 </ul>
             </div>
 

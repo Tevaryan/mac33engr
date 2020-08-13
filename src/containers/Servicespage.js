@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Nav';
+import Footer from '../components/Footer';
 import background from "../assets/otherpages.png";
 import text from "../assets/ourServices.png"
 import twoD1 from "../assets/2D1 copy.jpg"
@@ -28,6 +29,7 @@ class Servicespage extends Component {
 
 
         <Navbar/>
+        
         <div style={{width:'100vw', height:'45vh', backgroundImage: `url("${background}")`}} className="d-flex justify-content-center flex-column">
           <div style={{width:'100vw', height:'40vh'}} className="d-flex justify-content-center">
           <div style={{width:'60%', height:'100%'}} className="d-flex justify-content-center align-items-center">
@@ -65,6 +67,7 @@ class Servicespage extends Component {
           </div>
         </div>
 
+        <Footer/>
       </div>
     );
   }
