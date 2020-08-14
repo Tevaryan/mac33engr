@@ -7,7 +7,7 @@ class Footer extends Component{
    
   render(){
     return (
-      <div className = 'footerbar' style={{marginTop:'10%'}}>
+      <div className = 'footerbar'>
         <div className = 'row'>
 
 
