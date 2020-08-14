@@ -45,11 +45,11 @@ class Homepage extends Component {
           </div>
 
           <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-            <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center">
+            <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
-                <h1 className="Number" style={{color:'#2ea3f2'}}>01</h1>
+                <h1 className="Number">01</h1>
               </div>
-              <div style={{width:'55%', borderLeft:"10px solid #2ea3f2", padding:"1%"}} className="d-flex flex-column">
+              <div style={{width:'55%', padding:"1%"}} className="d-flex flex-column service-border ">
                 <div className="" style={{paddingLeft:'5%', paddingTop:'15%'}}>
                   <h1 className="title">IDEATION.</h1>
                 </div>
@@ -65,11 +65,11 @@ class Homepage extends Component {
           </div>
 
           <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center">
+          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
-                <h1 className="Number" style={{color:'#093b66'}}>02</h1>
+                <h1 className="Number">02</h1>
               </div>
-              <div style={{width:'55%', borderLeft:"10px solid #093b66", padding:"1%"}} className="d-flex flex-column">
+              <div style={{width:'55%', padding:"1%"}} className="d-flex flex-column service-border ">
                 <div className="" style={{paddingLeft:'5%', paddingTop:'15%'}}>
                   <h1 className="title">CAD.</h1>
                 </div>
@@ -88,11 +88,11 @@ class Homepage extends Component {
           </div>
 
           <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center">
+          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
-                <h1 className="Number" style={{color:'#093b66'}}>03</h1>
+                <h1 className="Number">03</h1>
               </div>
-              <div style={{width:'55%', borderLeft:"10px solid #093b66", padding:"1%"}} className="d-flex flex-column">
+              <div style={{width:'55%', padding:"1%"}} className="d-flex flex-column service-border">
                 <div className="" style={{paddingLeft:'5%', paddingTop:'15%'}}>
                   <h1 className="title">PROTOTYPING.</h1>
                 </div>
@@ -113,11 +113,11 @@ class Homepage extends Component {
           </div>
 
           <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center">
+          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
-                <h1 className="Number" style={{color:'#093b66'}}>04</h1>
+                <h1 className="Number">04</h1>
               </div>
-              <div style={{width:'55%', borderLeft:"10px solid #093b66", padding:"1%"}} className="d-flex flex-column">
+              <div style={{width:'55%', padding:"1%"}} className="d-flex flex-column service-border">
                 <div className="" style={{paddingLeft:'5%', paddingTop:'15%'}}>
                   <h1 className="title">MANUFACTURING.</h1>
                 </div>
@@ -135,11 +135,11 @@ class Homepage extends Component {
           </div>
 
           <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center">
+          <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
-                <h1 className="Number" style={{color:'#093b66'}}>05</h1>
+                <h1 className="Number">05</h1>
               </div>
-              <div style={{width:'55%', borderLeft:"10px solid #093b66", padding:"1%"}} className="d-flex flex-column">
+              <div style={{width:'55%', padding:"1%"}} className="d-flex flex-column service-border">
                 <div className="" style={{paddingLeft:'5%', paddingTop:'15%'}}>
                   <h1 className="title">COMMITMENT.</h1>
                 </div>
