@@ -76,7 +76,7 @@ class Homepage extends Component {
                 <div style={{paddingLeft:'20%'}}>
                   <h6 className="titledescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
                   <Button style={{backgroundColor:'#2ea3f2'}} className="buttonText">FIND OUT MORE</Button>
-                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}}>FREE QUOTE</Button>
+                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}} className="buttonText">FREE QUOTE</Button>
                 </div>
 
               </div>
@@ -102,7 +102,7 @@ class Homepage extends Component {
                   <Link to={`/3Dprinting`} style={{color:'white'}}> FIND OUT MORE</Link>
 
                   </Button>
-                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}}>FREE QUOTE</Button>
+                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}} className="buttonText">FREE QUOTE</Button>
                 </div>
               </div>
               <div style={{width:'30%'}}>
@@ -124,7 +124,7 @@ class Homepage extends Component {
                 <div style={{paddingLeft:'20%'}}>
                   <h6 className="titledescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
                   <Button style={{backgroundColor:'#2ea3f2'}} className="buttonText">FIND OUT MORE</Button>
-                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}}>FREE QUOTE</Button>
+                  <Button style={{backgroundColor:'#2ea3f2', marginLeft:'5%'}} className="buttonText">FREE QUOTE</Button>
                 </div>
               </div>
               <div style={{width:'30%'}}>
