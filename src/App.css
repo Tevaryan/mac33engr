@@ -16,11 +16,6 @@
   font-weight: bolder;
   font-size: 400%;
   color: #093b66;
-  -webkit-transition: color 0.2s ease-out;
- -moz-transition: color 0.2s ease-out;
- -o-transition: color 0.2s ease-out;
- -ms-transition: color 0.2s ease-out;
- transition: color 0.2s ease-out;
 }
 
 .titlediv {
@@ -115,12 +110,15 @@
 
 .service-border {
   border-left:10px solid #093b66;
+}
+
+.service-container {
   -webkit-transition: color 0.2s ease-out;
  -moz-transition: color 0.2s ease-out;
  -o-transition: color 0.2s ease-out;
  -ms-transition: color 0.2s ease-out;
  transition: color 0.2s ease-out;
-
+ transition: 0.2s ease-out;
 }
 
 .service-container:hover .Number {
@@ -132,7 +130,9 @@
   border-left:10px solid #2ea3f2;
 }
 
-
+/* .service-container:hover {
+  transform: scale(1.2);
+} */
 
 
 
