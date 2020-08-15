@@ -11,6 +11,7 @@ class Navbar extends Component {
     this.state = {
 
     };
+    
   }
 
   componentDidMount () {

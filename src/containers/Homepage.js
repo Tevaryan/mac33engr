@@ -18,9 +18,21 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-    };
+      
+     };
   }
+
+  componentDidMount () {
+    const logo = document.getElementById("service-div");
+    console.log(logo.getBoundingClientRect())
+
+    const logos = logo.getBoundingClientRect()
+    console.log(window.innerHeight, logos.top, logos.height );
+    var height = logos.top - (window.innerHeight/2 - logos.height/2);
+    console.log(height)
+    window.scrollTo(0,height);
+  }
+
 
   render() {
     return (
@@ -44,8 +56,8 @@ class Homepage extends Component {
             </div>
           </div>
 
-          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-            <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center service-container">
+          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center" ref={this.myRef} >
+            <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center service-container" id="service-div">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">01</h1>
               </div>
@@ -64,7 +76,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center" >
           <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">02</h1>
@@ -87,7 +99,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center" ref={this.myRef2}>
           <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center service-container">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">03</h1>
