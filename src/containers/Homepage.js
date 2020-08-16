@@ -18,61 +18,59 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
      };
   }
 
   componentDidMount () {
-    
+
     const div1 = document.getElementById("service-div1");
     var div1heighttop = div1.getBoundingClientRect().top - (window.innerHeight/2);
     var div1heightbottom = div1.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div2 = document.getElementById("service-div2");
     var div2heighttop = div2.getBoundingClientRect().top - (window.innerHeight/2);
     var div2heightbottom = div2.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div3 = document.getElementById("service-div3");
     var div3heighttop = div3.getBoundingClientRect().top - (window.innerHeight/2);
     var div3heightbottom = div3.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div4 = document.getElementById("service-div4");
     var div4heighttop = div4.getBoundingClientRect().top - (window.innerHeight/2);
     var div4heightbottom = div4.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div5 = document.getElementById("service-div5");
     var div5heighttop = div5.getBoundingClientRect().top - (window.innerHeight/2);
     var div5heightbottom = div5.getBoundingClientRect().bottom - (window.innerHeight/2);
 
-    
-    
     window.addEventListener('scroll', () => {
       const div1enterView = window.scrollY  > div1heighttop;
       const div1exitView = window.scrollY  > div1heightbottom;
       const div1exitView2 = window.scrollY  < div1heighttop;
-      
+
       if (div1enterView) {
         div1.classList.add('expand');
       }
       if(div1exitView || div1exitView2) {
         div1.classList.remove('expand');
       }
-      
+
       const div2enterView = window.scrollY  > div2heighttop;
       const div2exitView = window.scrollY  > div2heightbottom;
       const div2exitView2 = window.scrollY  < div2heighttop;
-    
+
       if (div2enterView) {
         div2.classList.add('expand');
       }
       if(div2exitView || div2exitView2) {
         div2.classList.remove('expand');
       }
-      
+
       const div3enterView = window.scrollY  > div3heighttop;
       const div3exitView = window.scrollY  > div3heightbottom;
       const div3exitView2 = window.scrollY  < div3heighttop;
-    
+
       if (div3enterView) {
         div3.classList.add('expand');
       }
@@ -83,7 +81,7 @@ class Homepage extends Component {
       const div4enterView = window.scrollY  > div4heighttop;
       const div4exitView = window.scrollY  > div4heightbottom;
       const div4exitView2 = window.scrollY  < div4heighttop;
-    
+
       if (div4enterView) {
         div4.classList.add('expand');
       }
@@ -94,7 +92,7 @@ class Homepage extends Component {
       const div5enterView = window.scrollY  > div5heighttop;
       const div5exitView = window.scrollY  > div5heightbottom;
       const div5exitView2 = window.scrollY  < div5heighttop;
-    
+
       if (div5enterView) {
         div5.classList.add('expand');
       }
@@ -108,9 +106,9 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div className='page-container' style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}} >
+      <div className='page-container' style={{width:'100vw',position:'absolute',zIndex:'-3'}} >
         <div className = 'content-wrap'>
-          <div style={{width:'100vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
+          <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
             <div  style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', backgroundImage: `url("${twoD1}")`, position:'absolute',zIndex:'-2'}}></div>
           <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
           </div>
@@ -128,7 +126,7 @@ class Homepage extends Component {
             </div>
           </div>
 
-          <div style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center" id="service-div1" ref={this.myRef} >
+          <div style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center" id="service-div1" >
             <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">01</h1>
@@ -171,7 +169,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center" id="service-div3" ref={this.myRef2}>
+          <div style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center" id="service-div3">
           <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', padding:'2%', borderRadius:'30px', backgroundImage: `url("${graphics2}")`,backgroundSize:'100% 100%', boxShadow: '5px 5px 5px grey' }} className="d-flex flex-row justify-content-center">
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">03</h1>

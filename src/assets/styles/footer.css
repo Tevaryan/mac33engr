@@ -1,28 +1,25 @@
 .footerbar {
-    display: flex;
-    background-image: url('../graphics1.png');
-    background-size: 100% 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40%;
+  display: flex;
+  background-image: url("../graphics1.png");
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  width: 80%;
 }
 
-
-
-.noHover{
-    pointer-events: none;
+.noHover {
+  pointer-events: none;
 }
 
 .list-unstyled {
-    font-family: "Gentium Book Basic";
-    font-weight: 700;
-    color: #909091;
+  font-family: "Gentium Book Basic";
+  font-weight: 700;
+  color: #909091;
 }
-  
