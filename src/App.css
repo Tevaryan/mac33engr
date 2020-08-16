@@ -121,18 +121,18 @@
  transition: 0.2s ease-out;
 }
 
-.service-container:hover .Number {
+.service-container.expand .Number {
   color: #2ea3f2;
 }
 
 
-.service-container:hover .service-border {
+.service-container.expand .service-border {
   border-left:10px solid #2ea3f2;
 }
 
-/* .service-container:hover {
+.service-container.expand {
   transform: scale(1.2);
-} */
+}
 
 
 

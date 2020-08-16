@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   componentDidMount () {
     window.addEventListener('scroll', () => {
-      const isTop = window.scrollY > 35;
+      const isTop = window.scrollY  > 35;
       const logo = document.getElementById('logo')
       const fullnavbar = document.getElementById('fullnavbar')
       if (isTop) {
