@@ -134,5 +134,35 @@
   transform: scale(1.2);
 }
 
+.service-container.greyout{
+  filter: grayscale(80%);
+}
 
+.mainbackground {
+  background-image: url("./assets/2D1 copy.jpg");
+  -webkit-transition: background-image 1s ease-in-out;
+  -moz-transition: background-image 1s ease-in-out;
+  -o-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+
+.mainbackground.div1 {
+  background-image: url("./assets/div1.png");
+}
+
+.mainbackground.div2 {
+  background-image: url("./assets/div2.png");
+}
+
+.mainbackground.div3 {
+  background-image: url("./assets/div3.png");
+}
+
+.mainbackground.div4 {
+  background-image: url("./assets/div4.png");
+}
+
+.mainbackground.div5 {
+  background-image: url("./assets/div5.png");
+}
 
