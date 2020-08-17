@@ -130,7 +130,7 @@
   border-left:10px solid #2ea3f2;
 }
 
-.service-container.expand {
+.expand .service-container{
   transform: scale(1.2);
 }
 

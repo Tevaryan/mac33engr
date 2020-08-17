@@ -45,6 +45,7 @@ class Homepage extends Component {
     var div5heighttop = div5.getBoundingClientRect().top - (window.innerHeight/2);
     var div5heightbottom = div5.getBoundingClientRect().bottom - (window.innerHeight/2);
 
+
     window.addEventListener('scroll', () => {
       const div1enterView = window.scrollY  > div1heighttop;
       const div1enterView2 = window.scrollY  < div1heightbottom;
@@ -52,38 +53,22 @@ class Homepage extends Component {
       if (div1enterView && div1enterView2) {
         div1.classList.add('expand');
         mainbackground.classList.add('div1');
-        div2.classList.add('greyout');
-        div3.classList.add('greyout');
-        div4.classList.add('greyout');
-        div5.classList.add('greyout');
       }
       else{
         div1.classList.remove('expand');
         mainbackground.classList.remove('div1');
-        div2.classList.remove('greyout');
-        div3.classList.remove('greyout');
-        div4.classList.remove('greyout');
-        div5.classList.remove('greyout');
       }
 
       const div2enterView = window.scrollY  > div2heighttop;
       const div2enterView2 = window.scrollY  < div2heightbottom;
       
       if (div2enterView && div2enterView2) {
-        div1.classList.add('greyout');
         div2.classList.add('expand');
         mainbackground.classList.add('div2');
-        div3.classList.add('greyout');
-        div4.classList.add('greyout');
-        div5.classList.add('greyout');
       }
       else{
-        div1.classList.remove('greyout');
         div2.classList.remove('expand');
         mainbackground.classList.remove('div2');
-        div3.classList.remove('greyout');
-        div4.classList.remove('greyout');
-        div5.classList.remove('greyout');
       }
 
       const div3enterView = window.scrollY  > div3heighttop;
@@ -152,8 +137,10 @@ class Homepage extends Component {
             </div>
           </div>
 
-          <div id="service-div1" style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center">
-            <div className="d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+          
+
+          <div id="service-div1" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">01</h1>
               </div>
@@ -172,8 +159,8 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div2" style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center">
-            <div className="d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+          <div id="service-div2" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">02</h1>
               </div>
@@ -195,8 +182,8 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div3" style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center">
-            <div id="service-div3" className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+          <div id="service-div3" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">03</h1>
               </div>
@@ -220,8 +207,8 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div4" style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center">
-            <div id="service-div4" className="d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+          <div id="service-div4" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+            <div id="service-div4" className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">04</h1>
               </div>
@@ -242,8 +229,8 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div5" style={{width:'100vw', marginTop:'4%'}} className="service-container d-flex justify-content-center">
-           <div className="d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+          <div id="service-div5" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+           <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">05</h1>
               </div>
