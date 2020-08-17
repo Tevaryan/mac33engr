@@ -26,41 +26,27 @@ class Homepage extends Component {
     const mainbackground = document.getElementById("mainbackground");
     
     const div1 = document.getElementById("service-div1");
-    var div1heighttop = div1.getBoundingClientRect().top - (window.innerHeight/2);
-    var div1heightbottom = div1.getBoundingClientRect().bottom - (window.innerHeight/2);
-
     const div2 = document.getElementById("service-div2");
-    var div2heighttop = div2.getBoundingClientRect().top - (window.innerHeight/2);
-    var div2heightbottom = div2.getBoundingClientRect().bottom - (window.innerHeight/2);
-
     const div3 = document.getElementById("service-div3");
-    var div3heighttop = div3.getBoundingClientRect().top - (window.innerHeight/2);
-    var div3heightbottom = div3.getBoundingClientRect().bottom - (window.innerHeight/2);
-
     const div4 = document.getElementById("service-div4");
-    var div4heighttop = div4.getBoundingClientRect().top - (window.innerHeight/2);
-    var div4heightbottom = div4.getBoundingClientRect().bottom - (window.innerHeight/2);
-
     const div5 = document.getElementById("service-div5");
-    var div5heighttop = div5.getBoundingClientRect().top - (window.innerHeight/2);
-    var div5heightbottom = div5.getBoundingClientRect().bottom - (window.innerHeight/2);
 
 
     window.addEventListener('scroll', () => {
-      const div1enterView = window.scrollY  > div1heighttop;
-      const div1enterView2 = window.scrollY  < div1heightbottom;
+      const div1enterView = div1.getBoundingClientRect().top   < (window.innerHeight/2);
+      const div1enterView2 = div1.getBoundingClientRect().bottom  > (window.innerHeight/2);
       
-      const div2enterView = window.scrollY  > div2heighttop;
-      const div2enterView2 = window.scrollY  < div2heightbottom;
+      const div2enterView = div2.getBoundingClientRect().top   < (window.innerHeight/2);
+      const div2enterView2 = div2.getBoundingClientRect().bottom  > (window.innerHeight/2);
     
-      const div3enterView = window.scrollY  > div3heighttop;
-      const div3enterView2 = window.scrollY  < div3heightbottom;
+      const div3enterView = div3.getBoundingClientRect().top   < (window.innerHeight/2);
+      const div3enterView2 = div3.getBoundingClientRect().bottom  > (window.innerHeight/2);
    
-      const div4enterView = window.scrollY  > div4heighttop;
-      const div4enterView2 = window.scrollY  < div4heightbottom;
+      const div4enterView = div4.getBoundingClientRect().top   < (window.innerHeight/2);
+      const div4enterView2 = div4.getBoundingClientRect().bottom  > (window.innerHeight/2);
     
-      const div5enterView = window.scrollY  > div5heighttop;
-      const div5enterView2 = window.scrollY  < div5heightbottom;
+      const div5enterView = div5.getBoundingClientRect().top   < (window.innerHeight/2);
+      const div5enterView2 = div5.getBoundingClientRect().bottom  > (window.innerHeight/2);
     
       if (div1enterView && div1enterView2) {
         div1.classList.add('expand');
