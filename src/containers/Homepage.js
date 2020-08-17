@@ -18,7 +18,7 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
      };
   }
 
@@ -28,25 +28,23 @@ class Homepage extends Component {
     const div1 = document.getElementById("service-div1");
     var div1heighttop = div1.getBoundingClientRect().top - (window.innerHeight/2);
     var div1heightbottom = div1.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div2 = document.getElementById("service-div2");
     var div2heighttop = div2.getBoundingClientRect().top - (window.innerHeight/2);
     var div2heightbottom = div2.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div3 = document.getElementById("service-div3");
     var div3heighttop = div3.getBoundingClientRect().top - (window.innerHeight/2);
     var div3heightbottom = div3.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div4 = document.getElementById("service-div4");
     var div4heighttop = div4.getBoundingClientRect().top - (window.innerHeight/2);
     var div4heightbottom = div4.getBoundingClientRect().bottom - (window.innerHeight/2);
-    
+
     const div5 = document.getElementById("service-div5");
     var div5heighttop = div5.getBoundingClientRect().top - (window.innerHeight/2);
     var div5heightbottom = div5.getBoundingClientRect().bottom - (window.innerHeight/2);
 
-    
-    
     window.addEventListener('scroll', () => {
       const div1enterView = window.scrollY  > div1heighttop;
       const div1enterView2 = window.scrollY  < div1heightbottom;
@@ -67,7 +65,7 @@ class Homepage extends Component {
         div4.classList.remove('greyout');
         div5.classList.remove('greyout');
       }
-      
+
       const div2enterView = window.scrollY  > div2heighttop;
       const div2enterView2 = window.scrollY  < div2heightbottom;
       
@@ -87,7 +85,7 @@ class Homepage extends Component {
         div4.classList.remove('greyout');
         div5.classList.remove('greyout');
       }
-      
+
       const div3enterView = window.scrollY  > div3heighttop;
       const div3enterView2 = window.scrollY  < div3heightbottom;
     
@@ -130,11 +128,14 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div className='page-container' style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}} >
+      <div className='page-container' style={{width:'100vw',position:'absolute',zIndex:'-3'}} >
         <div className = 'content-wrap'>
-          <div style={{width:'100vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
-            <div id = 'mainbackground' className = 'mainbackground' style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
-          <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
+          <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
+            <div style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
+            <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
+              <div  id = 'mainbackground' className = 'mainbackground' style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
+              <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
+            </div>
           </div>
           <Navbar/>
 
@@ -259,7 +260,7 @@ class Homepage extends Component {
             </div>
 
           </div>
-
+        
         </div>
         <Footer/>
       </div>
