@@ -134,7 +134,7 @@
   transform: scale(1.2);
 }
 
-.service-container.greyout{
+.greyout .service-container{
   filter: grayscale(80%);
 }
 
@@ -144,6 +144,7 @@
   -moz-transition: background-image 1s ease-in-out;
   -o-transition: background-image 1s ease-in-out;
   transition: background-image 1s ease-in-out;
+  transition: 0.1s;
 }
 
 .mainbackground.div1 {

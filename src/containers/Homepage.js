@@ -50,60 +50,73 @@ class Homepage extends Component {
       const div1enterView = window.scrollY  > div1heighttop;
       const div1enterView2 = window.scrollY  < div1heightbottom;
       
-      if (div1enterView && div1enterView2) {
-        div1.classList.add('expand');
-        mainbackground.classList.add('div1');
-      }
-      else{
-        div1.classList.remove('expand');
-        mainbackground.classList.remove('div1');
-      }
-
       const div2enterView = window.scrollY  > div2heighttop;
       const div2enterView2 = window.scrollY  < div2heightbottom;
-      
-      if (div2enterView && div2enterView2) {
-        div2.classList.add('expand');
-        mainbackground.classList.add('div2');
-      }
-      else{
-        div2.classList.remove('expand');
-        mainbackground.classList.remove('div2');
-      }
-
+    
       const div3enterView = window.scrollY  > div3heighttop;
       const div3enterView2 = window.scrollY  < div3heightbottom;
-    
-      if (div3enterView && div3enterView2) {
-        div3.classList.add('expand');
-        mainbackground.classList.add('div3');
-      }
-      else {
-        div3.classList.remove('expand');
-        mainbackground.classList.remove('div3');
-      }
-
+   
       const div4enterView = window.scrollY  > div4heighttop;
       const div4enterView2 = window.scrollY  < div4heightbottom;
     
-      if (div4enterView && div4enterView2) {
-        div4.classList.add('expand');
-        mainbackground.classList.add('div4');
-      }
-      else {
-        div4.classList.remove('expand');
-        mainbackground.classList.remove('div4');
-      }
-
       const div5enterView = window.scrollY  > div5heighttop;
       const div5enterView2 = window.scrollY  < div5heightbottom;
     
-      if (div5enterView && div5enterView2) {
+      if (div1enterView && div1enterView2) {
+        div1.classList.add('expand');
+        div2.classList.add('greyout');
+        div3.classList.add('greyout');
+        div4.classList.add('greyout');
+        div5.classList.add('greyout');
+        mainbackground.classList.add('div1');
+      }
+      else if (div2enterView && div2enterView2) {
+        div1.classList.add('greyout');
+        div2.classList.add('expand');
+        div3.classList.add('greyout');
+        div4.classList.add('greyout');
+        div5.classList.add('greyout');
+        mainbackground.classList.add('div2');
+      }
+      else if (div3enterView && div3enterView2) {
+        div1.classList.add('greyout');
+        div2.classList.add('greyout');
+        div3.classList.add('expand');
+        div4.classList.add('greyout');
+        div5.classList.add('greyout');
+        mainbackground.classList.add('div3');
+      }
+      else if (div4enterView && div4enterView2) {
+        div1.classList.add('greyout');
+        div2.classList.add('greyout');
+        div3.classList.add('greyout');
+        div4.classList.add('expand');
+        div5.classList.add('greyout');
+        mainbackground.classList.add('div4');
+      }
+      else if (div5enterView && div5enterView2) {
+        div1.classList.add('greyout');
+        div2.classList.add('greyout');
+        div3.classList.add('greyout');
+        div4.classList.add('greyout');
         div5.classList.add('expand');
         mainbackground.classList.add('div5');
       }
-      else {
+      else{
+        div1.classList.remove('expand');
+        div2.classList.remove('expand');
+        div3.classList.remove('expand');
+        div4.classList.remove('expand');
         div5.classList.remove('expand');
+        div1.classList.remove('greyout');
+        div2.classList.remove('greyout');
+        div3.classList.remove('greyout');
+        div4.classList.remove('greyout');
+        div5.classList.remove('greyout');
+        mainbackground.classList.remove('div1');
+        mainbackground.classList.remove('div2');
+        mainbackground.classList.remove('div3');
+        mainbackground.classList.remove('div4');
         mainbackground.classList.remove('div5');
       }
 
