@@ -103,16 +103,11 @@ class Homepage extends Component {
         mainbackground.classList.add('div5');
       }
       else{
-        div1.classList.remove('expand');
-        div2.classList.remove('expand');
-        div3.classList.remove('expand');
-        div4.classList.remove('expand');
-        div5.classList.remove('expand');
-        div1.classList.remove('greyout');
-        div2.classList.remove('greyout');
-        div3.classList.remove('greyout');
-        div4.classList.remove('greyout');
-        div5.classList.remove('greyout');
+        div1.classList.remove('expand','greyout');
+        div2.classList.remove('expand','greyout');
+        div3.classList.remove('expand','greyout');
+        div4.classList.remove('expand','greyout');
+        div5.classList.remove('expand','greyout');
         mainbackground.classList.remove('div1');
         mainbackground.classList.remove('div2');
         mainbackground.classList.remove('div3');
