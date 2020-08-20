@@ -13,7 +13,6 @@ import { Button } from 'reactstrap';
 import "../App.css"
 import {Link} from "react-router-dom";
 
-
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +22,7 @@ class Homepage extends Component {
   }
 
   componentDidMount () {
-    const mainbackground = document.getElementById("mainbackground");
+    const secondbackground = document.getElementById("secondbackground");
     
     const div1 = document.getElementById("service-div1");
     const div2 = document.getElementById("service-div2");
@@ -33,6 +32,7 @@ class Homepage extends Component {
 
 
     window.addEventListener('scroll', () => {
+      
       const div1enterView = div1.getBoundingClientRect().top   < (window.innerHeight/2);
       const div1enterView2 = div1.getBoundingClientRect().bottom  > (window.innerHeight/2);
       
@@ -54,7 +54,12 @@ class Homepage extends Component {
         div3.classList.add('greyout');
         div4.classList.add('greyout');
         div5.classList.add('greyout');
-        mainbackground.classList.add('div1');
+        secondbackground.classList.add('div1');
+        secondbackground.classList.remove('goaway');
+        secondbackground.classList.remove('div2');
+        secondbackground.classList.remove('div3');
+        secondbackground.classList.remove('div4');
+        secondbackground.classList.remove('div5');
       }
       else if (div2enterView && div2enterView2) {
         div1.classList.add('greyout');
@@ -62,7 +67,12 @@ class Homepage extends Component {
         div3.classList.add('greyout');
         div4.classList.add('greyout');
         div5.classList.add('greyout');
-        mainbackground.classList.add('div2');
+        secondbackground.classList.add('div2');
+        secondbackground.classList.remove('goaway');
+        secondbackground.classList.remove('div1');
+        secondbackground.classList.remove('div3');
+        secondbackground.classList.remove('div4');
+        secondbackground.classList.remove('div5');
       }
       else if (div3enterView && div3enterView2) {
         div1.classList.add('greyout');
@@ -70,7 +80,12 @@ class Homepage extends Component {
         div3.classList.add('expand');
         div4.classList.add('greyout');
         div5.classList.add('greyout');
-        mainbackground.classList.add('div3');
+        secondbackground.classList.add('div3');
+        secondbackground.classList.remove('goaway');
+        secondbackground.classList.remove('div1');
+        secondbackground.classList.remove('div2');
+        secondbackground.classList.remove('div4');
+        secondbackground.classList.remove('div5');
       }
       else if (div4enterView && div4enterView2) {
         div1.classList.add('greyout');
@@ -78,7 +93,12 @@ class Homepage extends Component {
         div3.classList.add('greyout');
         div4.classList.add('expand');
         div5.classList.add('greyout');
-        mainbackground.classList.add('div4');
+        secondbackground.classList.add('div4');
+        secondbackground.classList.remove('goaway');
+        secondbackground.classList.remove('div1');
+        secondbackground.classList.remove('div2');
+        secondbackground.classList.remove('div3');
+        secondbackground.classList.remove('div5');
       }
       else if (div5enterView && div5enterView2) {
         div1.classList.add('greyout');
@@ -86,7 +106,12 @@ class Homepage extends Component {
         div3.classList.add('greyout');
         div4.classList.add('greyout');
         div5.classList.add('expand');
-        mainbackground.classList.add('div5');
+        secondbackground.classList.add('div5');
+        secondbackground.classList.remove('goaway');
+        secondbackground.classList.remove('div1');
+        secondbackground.classList.remove('div2');
+        secondbackground.classList.remove('div3');
+        secondbackground.classList.remove('div4');
       }
       else{
         div1.classList.remove('expand','greyout');
@@ -94,11 +119,7 @@ class Homepage extends Component {
         div3.classList.remove('expand','greyout');
         div4.classList.remove('expand','greyout');
         div5.classList.remove('expand','greyout');
-        mainbackground.classList.remove('div1');
-        mainbackground.classList.remove('div2');
-        mainbackground.classList.remove('div3');
-        mainbackground.classList.remove('div4');
-        mainbackground.classList.remove('div5');
+        secondbackground.classList.add('goaway');
       }
 
     })
@@ -112,7 +133,8 @@ class Homepage extends Component {
           <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
             <div style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
             <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
-              <div  id = 'mainbackground' className = 'mainbackground' style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
+              <div  className = 'mainbackground' style={{width:'100%', height:'100%', backgroundImage: `url("${twoD1}")`, position:'absolute',zIndex:'-2'}}></div>
+              <div  id = 'secondbackground' className = 'secondbackground' style={{width:'100%', height:'100%', position:'absolute', zIndex:'-2'}}></div>
               <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
             </div>
           </div>
@@ -134,7 +156,7 @@ class Homepage extends Component {
           
 
           <div id="service-div1" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
-            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}}>
+            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">01</h1>
               </div>

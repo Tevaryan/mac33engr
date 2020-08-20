@@ -113,24 +113,27 @@
 }
 
 .service-container {
+  box-shadow: 5px 5px 5px grey;
   -webkit-transition: color 0.2s ease-out;
  -moz-transition: color 0.2s ease-out;
  -o-transition: color 0.2s ease-out;
  -ms-transition: color 0.2s ease-out;
  transition: color 0.2s ease-out;
  transition: 0.2s ease-out;
+ transition: transform 0.7s ease-in-out;
 }
 
-.service-container.expand .Number {
+.expand .service-container .Number {
   color: #2ea3f2;
 }
 
 
-.service-container.expand .service-border {
+.expand .service-container .service-border {
   border-left:10px solid #2ea3f2;
 }
 
 .expand .service-container{
+  box-shadow: 0 0 0 grey;
   transform: scale(1.2);
 }
 
@@ -138,32 +141,51 @@
   filter: grayscale(80%);
 }
 
-.mainbackground {
-  background-image: url("./assets/2D1 copy.jpg");
-  -webkit-transition: background-image 1s ease-in-out;
-  -moz-transition: background-image 1s ease-in-out;
-  -o-transition: background-image 1s ease-in-out;
-  transition: background-image 1s ease-in-out;
-  transition: 0.1s;
+.secondbackground {
+  opacity: 0;
+  -webkit-transition-property: opacity 0.7s ease-in-out;
+  -moz-transition-property: opacity 0.7s ease-in-out;
+  -o-transition-property: opacity 0.7s ease-in-out;
+  transition-property: opacity 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
-.mainbackground.div1 {
+.secondbackground.div1 {
   background-image: url("./assets/div1.png");
+  opacity: 100;
+}
+.secondbackground.div1.goaway {
+  opacity: 0;
 }
 
-.mainbackground.div2 {
+.secondbackground.div2 {
   background-image: url("./assets/div2.png");
+  opacity: 100;
+}
+.secondbackground.div2.goaway {
+  opacity: 0;
 }
 
-.mainbackground.div3 {
+.secondbackground.div3 {
   background-image: url("./assets/div3.png");
+  opacity: 100;
+}
+.secondbackground.div3.goaway {
+  opacity: 0;
 }
 
-.mainbackground.div4 {
+.secondbackground.div4 {
   background-image: url("./assets/div4.png");
+  opacity: 100;
+}
+.secondbackground.div4.goaway {
+  opacity: 0;
 }
 
-.mainbackground.div5 {
+.secondbackground.div5 {
   background-image: url("./assets/div5.png");
+  opacity: 100;
 }
-
+.secondbackground.div5.goaway {
+  opacity: 0;
+}
