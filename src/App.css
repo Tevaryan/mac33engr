@@ -151,7 +151,7 @@
 }
 
 .secondbackground.div1 {
-  background-image: url("./assets/div1.png");
+  background: url("./assets/backgroundImages4.png");
   opacity: 100;
 }
 .secondbackground.div1.goaway {

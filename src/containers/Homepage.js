@@ -10,6 +10,8 @@ import graphics2 from "../assets/graphics2.png"
 import titletext from "../assets/TitleText.png"
 import CAD from "../assets/CAD.png"
 import { Button } from 'reactstrap';
+import image from '../assets/backgroundImages4.png'
+import image2 from '../assets/backgroundImages3.png'
 import "../App.css"
 import {Link} from "react-router-dom";
 
@@ -17,13 +19,14 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      backgroundImage: image,
 
      };
   }
 
   componentDidMount () {
     const secondbackground = document.getElementById("secondbackground");
-    
+
     const div1 = document.getElementById("service-div1");
     const div2 = document.getElementById("service-div2");
     const div3 = document.getElementById("service-div3");
@@ -32,22 +35,22 @@ class Homepage extends Component {
 
 
     window.addEventListener('scroll', () => {
-      
+
       const div1enterView = div1.getBoundingClientRect().top   < (window.innerHeight/2);
       const div1enterView2 = div1.getBoundingClientRect().bottom  > (window.innerHeight/2);
-      
+
       const div2enterView = div2.getBoundingClientRect().top   < (window.innerHeight/2);
       const div2enterView2 = div2.getBoundingClientRect().bottom  > (window.innerHeight/2);
-    
+
       const div3enterView = div3.getBoundingClientRect().top   < (window.innerHeight/2);
       const div3enterView2 = div3.getBoundingClientRect().bottom  > (window.innerHeight/2);
-   
+
       const div4enterView = div4.getBoundingClientRect().top   < (window.innerHeight/2);
       const div4enterView2 = div4.getBoundingClientRect().bottom  > (window.innerHeight/2);
-    
+
       const div5enterView = div5.getBoundingClientRect().top   < (window.innerHeight/2);
       const div5enterView2 = div5.getBoundingClientRect().bottom  > (window.innerHeight/2);
-    
+
       if (div1enterView && div1enterView2) {
         div1.classList.add('expand');
         div2.classList.add('greyout');
@@ -60,6 +63,10 @@ class Homepage extends Component {
         secondbackground.classList.remove('div3');
         secondbackground.classList.remove('div4');
         secondbackground.classList.remove('div5');
+        // this.setState({
+        //   backgroundImage: image
+        // })
+        // console.log(this.state.backgroundImage)
       }
       else if (div2enterView && div2enterView2) {
         div1.classList.add('greyout');
@@ -73,6 +80,10 @@ class Homepage extends Component {
         secondbackground.classList.remove('div3');
         secondbackground.classList.remove('div4');
         secondbackground.classList.remove('div5');
+        // this.setState({
+        //   backgroundImage: image2
+        // })
+        // console.log(this.state.backgroundImage)
       }
       else if (div3enterView && div3enterView2) {
         div1.classList.add('greyout');
@@ -134,11 +145,14 @@ class Homepage extends Component {
             <div style={{width:'100%', height:'100%', backgroundColor:'#a6a6aa', position:'absolute',zIndex:'-2'}}></div>
             <div style={{width:'100vw', backgroundColor:'#a6a6aa'}}>
               <div  className = 'mainbackground' style={{width:'100%', height:'100%', backgroundImage: `url("${twoD1}")`, position:'absolute',zIndex:'-2'}}></div>
-              <div  id = 'secondbackground' className = 'secondbackground' style={{width:'100%', height:'100%', position:'absolute', zIndex:'-2'}}></div>
+              <div id = 'secondbackground' className = 'secondbackground'  style={{width:'100%', height:'100%', position:'absolute', zIndex:'-2'}}>
+                {/* <img src={this.state.backgroundImage}   alt="" style={{width:'100%'}}>
+                </img> */}
+              </div>
               <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
             </div>
           </div>
-          
+
           <Navbar/>
 
           <div style={{width:'100vw', marginTop:'1%'}} className="d-flex justify-content-center">
@@ -153,7 +167,7 @@ class Homepage extends Component {
             </div>
           </div>
 
-          
+
 
           <div id="service-div1" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
             <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
@@ -175,7 +189,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div2" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div id="service-div2" style={{width:'100vw', marginTop:'15%'}} className="d-flex justify-content-center">
             <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)', backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">02</h1>
@@ -198,7 +212,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div3" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div id="service-div3" style={{width:'100vw', marginTop:'15%'}} className="d-flex justify-content-center">
             <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">03</h1>
@@ -223,7 +237,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div4" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div id="service-div4" style={{width:'100vw', marginTop:'15%'}} className="d-flex justify-content-center">
             <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">04</h1>
@@ -245,7 +259,7 @@ class Homepage extends Component {
 
           </div>
 
-          <div id="service-div5" style={{width:'100vw', marginTop:'4%'}} className="d-flex justify-content-center">
+          <div id="service-div5" style={{width:'100vw', marginTop:'15%'}} className="d-flex justify-content-center">
            <div className="service-container d-flex flex-row justify-content-center" style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${graphics2}")`, padding:'2%', backgroundSize:'100% 100%', borderRadius:'30px'}}>
               <div style={{width:'15%',paddingTop:'3%'}} className="d-flex justify-content-center">
                 <h1 className="Number">05</h1>
@@ -264,7 +278,7 @@ class Homepage extends Component {
             </div>
 
           </div>
-        
+
         </div>
         <Footer/>
       </div>
