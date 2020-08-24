@@ -34,7 +34,7 @@ class threeDprinting extends Component {
     return (
       <div className='page-container' style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}}>
         <div className='content-wrap'>
-          <div style={{width:'100vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
+          <div style={{width:'10vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
             <div  style={{width:'100%', height:'100%', backgroundColor:'#fafafa', position:'absolute',zIndex:'-2'}}></div>
           <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
           </div>

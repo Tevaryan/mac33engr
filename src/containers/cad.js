@@ -21,7 +21,7 @@ import StackGrid from "react-stack-grid";
 
 import "../App.css"
 
-class Servicespage extends Component {
+class cad extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -179,4 +179,4 @@ class Servicespage extends Component {
   }
 }
 
-export default Servicespage;
+export default cad;
