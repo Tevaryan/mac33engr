@@ -6,7 +6,7 @@ import text from "../assets/our3Dprinters.png"
 import twoD1 from "../assets/2D1 copy.jpg"
 import printer from "../assets/DMP_Factory_500.jpg"
 import graphics2 from "../assets/graphics2.png"
-import threeDprinting from "../assets/servicetab1.jpg"
+// import treeDprinting from "../assets/servicetab1.jpg"
 import CAD from "../assets/servicetab2.jpg";
 import one from "../assets/dmp500/1.jpeg"
 import two from "../assets/dmp500/DMP-Factory-500-Engine-fuel-nozzle-e1554739251583.jpg"
@@ -21,7 +21,7 @@ import StackGrid from "react-stack-grid";
 
 import "../App.css"
 
-class Servicespage extends Component {
+class threeDprinting extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -179,4 +179,4 @@ class Servicespage extends Component {
   }
 }
 
-export default Servicespage;
+export default threeDprinting;
