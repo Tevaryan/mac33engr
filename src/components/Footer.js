@@ -15,9 +15,9 @@ class Footer extends Component{
             <div className = 'columns'>
                 <NavLink className="d-flex Nav-text NavText" style={{color:'#c6c6c6', fontWeight:'bolder'}}> WHAT WE DO</NavLink>
                 <ul className = 'list-unstyled'>
-                    <NavLink>CAD</NavLink>
+                    <NavLink tag={Link} to={'/CAD'}>CAD</NavLink>
                     <NavLink>Protyping</NavLink>
-                    <NavLink>Manufacturing</NavLink>
+                    <NavLink tag={Link} to={'/Manufacturing'}>Manufacturing</NavLink>
                     <NavLink tag={Link} to={'/3Dprinting'}>3D Printing</NavLink>
                 </ul>
             </div>
@@ -59,7 +59,10 @@ class Footer extends Component{
                         <NavLink className = 'noHover' style ={{display:'inline-block', float:'right'}}>(833) 505 3330</NavLink>
                     </NavItem>
                   
-                
+                    <NavItem>
+                        <NavLink className = 'noHover ' style ={{display:'inline-block', fontWeight:'bolder'}}>Email</NavLink>
+                        <NavLink className = 'noHover' style ={{display:'inline-block', float:'right'}}>team@mach33engr.com</NavLink>
+                    </NavItem>
               
                 </ul>
               </div>

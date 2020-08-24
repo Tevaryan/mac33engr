@@ -57,7 +57,7 @@ class Servicespage extends Component {
 
             <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
               <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center">
-              <Link to={`/cad`}>
+              <Link to={`/CAD`}>
                 <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
                   <div className="" style={{paddingLeft:'5%'}}>
                     <h1 className="title" style={{color:"#2ea3f2"}}>CAD.</h1>
@@ -69,6 +69,22 @@ class Servicespage extends Component {
               </Link>
               </div>
             </div>
+
+            <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
+              <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center">
+              <Link to={`/Manufacturing`}>
+                <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
+                  <div className="" style={{paddingLeft:'5%'}}>
+                    <h1 className="title" style={{color:"#2ea3f2"}}>Manufacturing.</h1>
+                  </div>
+                  <div style={{paddingLeft:'20%'}}>
+                    <h6 className="titledescription" style={{color:'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                  </div>
+                </div>
+              </Link>
+              </div>
+            </div>
+
         </div>
         <Footer/>
       </div>

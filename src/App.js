@@ -6,7 +6,8 @@ import Portfoliopage from "./containers/Portfoliopage.js"
 import Servicespage from "./containers/Servicespage.js"
 import ContactUspage from "./containers/ContactUspage.js"
 import threeDprinting from "./containers/threeDprinting.js"
-import cad from "./containers/cad.js"
+import CAD from "./containers/cad.js"
+import Manufacturing from "./containers/Manufacturing.js"
 import './App.css';
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
         <Route exact path ={'/'} component={Homepage}/>
         <Route exact path ={'/Services'} component={Servicespage}/>
         <Route exact path ={'/3Dprinting'} component={threeDprinting}/>
-        <Route exact path ={'/cad'} component={cad}/>
+        <Route exact path ={'/CAD'} component={CAD}/>
+        <Route exact path ={'/Manufacturing'} component={Manufacturing}/>
         <Route exact path ={'/Portfolio'} component={Portfoliopage}/>
         <Route exact path ={'/AboutUs'} component={AboutUspage}/>
         <Route exact path ={'/ContactUs'} component={ContactUspage}/>

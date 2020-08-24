@@ -6,7 +6,7 @@ import text from "../assets/our3Dprinters.png"
 import twoD1 from "../assets/2D1 copy.jpg"
 import printer from "../assets/DMP_Factory_500.jpg"
 import graphics2 from "../assets/graphics2.png"
-// import treeDprinting from "../assets/servicetab1.jpg"
+import threeDprinting from "../assets/servicetab1.jpg"
 import CAD from "../assets/servicetab2.jpg";
 import one from "../assets/dmp500/1.jpeg"
 import two from "../assets/dmp500/DMP-Factory-500-Engine-fuel-nozzle-e1554739251583.jpg"
@@ -21,7 +21,7 @@ import StackGrid from "react-stack-grid";
 
 import "../App.css"
 
-class threeDprinting extends Component {
+class manufacturing extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +34,7 @@ class threeDprinting extends Component {
     return (
       <div className='page-container' style={{width:'100vw', backgroundImage: `url("${twoD1}")`,position:'absolute',zIndex:'-3'}}>
         <div className='content-wrap'>
-          <div style={{width:'10vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
+          <div style={{width:'100vw', backgroundColor:'#a6a6aa',backgroundImage: `url("${twoD1}")`}}>
             <div  style={{width:'100%', height:'100%', backgroundColor:'#fafafa', position:'absolute',zIndex:'-2'}}></div>
           <img src={background} alt="" style={{position:'absolute', zIndex:'-1', width:'100%'}} className="topbackgroundImage"/>
           </div>
@@ -179,4 +179,4 @@ class threeDprinting extends Component {
   }
 }
 
-export default threeDprinting;
+export default manufacturing;
