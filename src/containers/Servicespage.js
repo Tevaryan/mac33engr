@@ -57,7 +57,7 @@ class Servicespage extends Component {
 
             <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
               <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px', boxShadow: '5px 5px 5px grey'}} className="d-flex flex-row justify-content-center">
-              <Link to={`/3Dprinting`}>
+              <Link to={`/cad`}>
                 <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
                   <div className="" style={{paddingLeft:'5%'}}>
                     <h1 className="title" style={{color:"#2ea3f2"}}>CAD.</h1>
