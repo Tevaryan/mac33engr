@@ -16,9 +16,9 @@ class Footer extends Component{
                 <NavLink className="d-flex Nav-text NavText" style={{color:'#c6c6c6', fontWeight:'bolder'}}> WHAT WE DO</NavLink>
                 <ul className = 'list-unstyled'>
                     <NavLink tag={Link} to={'/CAD'}>CAD</NavLink>
-                    <NavLink>Protyping</NavLink>
-                    <NavLink tag={Link} to={'/Manufacturing'}>Manufacturing</NavLink>
                     <NavLink tag={Link} to={'/3Dprinting'}>3D Printing</NavLink>
+                    <NavLink tag={Link} to={'/Manufacturing'}>Manufacturing</NavLink>
+                    <NavLink>Link 4</NavLink>
                 </ul>
             </div>
 
