@@ -189,3 +189,11 @@
 .secondbackground.div5.goaway {
   opacity: 0;
 }
+
+.servicepage-box {
+  box-shadow: 5px 5px 5px grey;
+}
+
+.servicepage-box:hover {
+  box-shadow: 0px 0px 0px grey;
+}

@@ -4,17 +4,17 @@ import Footer from '../components/Footer';
 import background from "../assets/otherpages.png";
 import text from "../assets/our3Dprinters.png"
 import twoD1 from "../assets/2D1 copy.jpg"
-import printer from "../assets/DMP_Factory_500.jpg"
+import logo from "../assets/simulation_testing/sw logo.png"
 import graphics2 from "../assets/graphics2.png"
 import threeDprinting from "../assets/servicetab1.jpg"
 import CAD from "../assets/servicetab2.jpg";
-import one from "../assets/dmp500/1.jpeg"
-import two from "../assets/dmp500/DMP-Factory-500-Engine-fuel-nozzle-e1554739251583.jpg"
-import three from "../assets/dmp500/download.jpeg"
-import four from "../assets/dmp500/images (1).jpeg"
-import five from "../assets/dmp500/images (2).jpeg"
-import six from "../assets/dmp500/images.jpeg"
-import seven from "../assets/dmp500/PES_April20_Additive_GFMS-3-1024x810.jpg"
+import one from "../assets/simulation_testing/image-1.jpg"
+import two from "../assets/simulation_testing/image-2.jpg"
+import three from "../assets/simulation_testing/image-3.jpg"
+import four from "../assets/simulation_testing/image-4.jpg"
+import five from "../assets/simulation_testing/image-5.png"
+import six from "../assets/simulation_testing/image-6.jpg"
+import seven from "../assets/simulation_testing/image-7.jpg"
 import StackGrid from "react-stack-grid";
 
 
@@ -53,11 +53,11 @@ class cad extends Component {
             <div style={{width:'70%', padding:'2%', backgroundSize:'100% '}} className="d-flex flex-column justify-content-center">
               <div style={{width:'100%'}} className="d-flex flex-row">
                 <div style={{width:'30%', padding:"4%"}}>
-                <img src={printer} alt="" style={{width:'100%'}}/>
+                <img src={logo} alt="" style={{width:'100%'}}/>
                 </div>
               <div style={{width:'70%', padding:"4%"}} className="d-flex flex-column">
                 <div className="" style={{paddingLeft:'5%'}}>
-                  <h1 className="title" style={{color:"#2ea3f2"}}>DMP Factory 500.</h1>
+                  <h1 className="title" style={{color:"#2ea3f2"}}>Testing.</h1>
                 </div>
                 <div style={{paddingLeft:'20%'}}>
                   <h6 className="titledescription" style={{color:'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
@@ -107,11 +107,11 @@ class cad extends Component {
             <div style={{width:'70%', padding:'2%', marginTop:'2%', backgroundSize:'100%'}} className="d-flex flex-column justify-content-center">
               <div style={{width:'100%'}} className="d-flex flex-row">
                 <div style={{width:'30%', padding:"4%"}}>
-                <img src={printer} alt="" style={{width:'100%'}}/>
+                <img src={logo} alt="" style={{width:'100%'}}/>
                 </div>
               <div style={{width:'70%', padding:"4%"}} className="d-flex flex-column">
                 <div className="" style={{paddingLeft:'5%'}}>
-                  <h1 className="title" style={{color:"#2ea3f2"}}>DMP Factory 500.</h1>
+                  <h1 className="title" style={{color:"#2ea3f2"}}>Simulations.</h1>
                 </div>
                 <div style={{paddingLeft:'20%'}}>
                   <h6 className="titledescription" style={{color:'black'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
