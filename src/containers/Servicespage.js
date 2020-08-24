@@ -39,8 +39,7 @@ class Servicespage extends Component {
 
 
           <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
-              <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
-              <Link to={`/CAD`}>
+              <Link to={`/CAD`} style={{textDecoration: 'none', width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
                 <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
                   <div className="" style={{paddingLeft:'5%'}}>
                     <h1 className="title" style={{color:"#2ea3f2"}}>CAD.</h1>
@@ -50,12 +49,10 @@ class Servicespage extends Component {
                   </div>
                 </div>
               </Link>
-              </div>
             </div>
 
             <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
-              <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${threeDprinting}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
-              <Link to={`/3Dprinting`}>
+              <Link to={`/3Dprinting`} style={{textDecoration: 'none', width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${threeDprinting}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
                 <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
                   <div className="" style={{paddingLeft:'5%'}}>
                     <h1 className="title" style={{color:"#2ea3f2"}}>3D Printing.</h1>
@@ -65,12 +62,10 @@ class Servicespage extends Component {
                   </div>
                 </div>
               </Link>
-              </div>
             </div>
 
             <div style={{width:'100vw', marginTop:'5%'}} className="d-flex justify-content-center">
-              <div style={{width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
-              <Link to={`/Manufacturing`}>
+              <Link to={`/Manufacturing`} style={{textDecoration: 'none', width:'70%', height:'', backgroundColor:'rgba(0,0,0,0.2)',backgroundImage: `url("${CAD}")`, padding:'2%', backgroundSize:'100% ', borderRadius:'30px'}} className="servicepage-box d-flex flex-row justify-content-center">
                 <div style={{width:'80%', padding:"4%"}} className="d-flex flex-column">
                   <div className="" style={{paddingLeft:'5%'}}>
                     <h1 className="title" style={{color:"#2ea3f2"}}>Manufacturing.</h1>
@@ -80,7 +75,6 @@ class Servicespage extends Component {
                   </div>
                 </div>
               </Link>
-              </div>
             </div>
 
         </div>
