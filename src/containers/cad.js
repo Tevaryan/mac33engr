@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/Nav';
 import Footer from '../components/Footer';
 import background from "../assets/otherpages.png";
-import text from "../assets/our3Dprinters.png"
+import text from "../assets/CADservices.png"
 import twoD1 from "../assets/2D1 copy.jpg"
 import logo from "../assets/simulation_testing/sw logo.png"
 import graphics2 from "../assets/graphics2.png"
@@ -44,7 +44,7 @@ class cad extends Component {
           <div style={{width:'100vw', height:'45vh'}} className="d-flex justify-content-center flex-column">
             <div style={{width:'100%', height:'100%'}} className="d-flex justify-content-center">
             <div style={{width:'70%', height:'100%'}} className="d-flex justify-content-center align-items-center">
-            {/* <img src={text} alt="" style={{width:'100%'}}/> */}
+            <img src={text} alt="" style={{width:'100%'}}/>
             </div>
             </div>
           </div>
